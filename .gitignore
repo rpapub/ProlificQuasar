@@ -1,0 +1,12 @@
+#In newer versions of studio, local entity dlls are stored in a dedicated sub-directory (.local/.entities)
+#Ignore .local files without ignoring dataservice object .dlls
+!.local/
+.local/*
+!.local/.entities/
+#.tmh folder is poorly documented, so not ignoring it currently.
+#.tmh/
+#Ignore temporary files from unsaved .xaml files
+~*
+#Ignore Generated Hashes, Reduce Diff Size
+.objects/**/.attributes/SearchHash
+.objects/**/.hash
